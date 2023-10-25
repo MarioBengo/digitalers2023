@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+
+    <!-- ====== font Awesome ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- ====== Animation ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- ====== Bootstrap ======= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- ===========================================
+    ==================== HEADER ====================
+    ============================================ -->
+    <header class="main-header">
+        <nav class="nav-main navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-logo" href="#">
+                    <img src="assets/images/logo.png" alt="Imagen logo">
+                    <span>Harmonía</span>Musical
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link px-2" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="pages/product/product.html">Productos</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="pages/contact/contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="pages/about-us/about-us.html">Nosotros</a>
+                        </li>
+                    </ul>
+                    <div id="nav-icons" class="nav-icon d-flex justify-content-center">
+                        <a href="pages/login/login.html" class="nav-link cart-icon mx-2 text-white">
+                            <i class="fa-solid fa-user text-white"></i>
+                        </a>
+                    </div>
+                    <div id="nav-info" class="mx-2 d-flex justify-content-center">
+                        <a href="pages/register/register.html" class="btn nav-register">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- ===========================================
+    ==================== CAROUSEL ==================
+    ============================================ -->
+    <section>
+        <div class="carousel-main">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6500">
+                        <img src="assets/images/img-carousel.webp" class="d-block w-100"
+                            alt="Un hombre utilizando dispostivo lentes de realidad virtual">
+                        
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6500">
+                        <img src="assets/images/img-carousel-2.webp" class="d-block w-100 opacity-50"
+                            alt="Un escritorio con una pc gamer y algunos dispositivos mas">
+                        
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6500">
+                        <img src="assets/images/img-carousel-3.webp" class="d-block w-100"
+                            alt="dos celulares uno tras de otro con la parte tracera hacia el frente">
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================================
+    ===================== MAIN =====================
+    ============================================ -->
+    <main class="main-container">
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12 p-0">
+                        <img src="assets/images/Presentacion.jpeg" class="img-fluid"
+                            alt="Una guitarra eléctrica y otros instrumentos musicales">
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 pt-5">
+                        <div class="text-white">
+                            <h2 class="mt-3">Instrumentos Musicales <br>de Primera Linea</h2>
+                            <p class="mt-3">Descubre una amplia selección de instrumentos musicales de alta calidad para músicos de todos los niveles. Desde guitarras y teclados hasta baterías y equipos de grabación, tenemos lo que necesitas para hacer música.</p>
+                            <a href="/pages/product/product.html" class="btn btn-info mt-3">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+      <!-- =================================================================================== features  ==================== =========== -->
+      <section class="features-section ">
+        <div class="row g-0">
+          <div class="col-12 col-lg-4">
+            <div class="main-feature">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Envíos Gratis a Todo el Pais a partir de los $20.000</span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="main-feature ">
+              <i class="fa-solid fa-box-open"></i>
+              <span>Primera devolucion gratis dentro de los 15 días de recibida su compra</span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="main-feature">
+              <i class="fa-regular fa-credit-card"></i>
+              <span><strong>HASTA 24 CUOTAS FIJAS</strong> Con VISA o MASTERCARD Bancarias</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    
+
+    <!-- ===========================================
+    ==================== FOOTER ====================
+    ============================================ -->
+      <footer class="pie-pagina " >
+    
+    </div>
+    <div class="grupo-1">
+      <div class="box footer-right">
+        <figure>
+            <img src="assets/images/logo.png" alt="Imagen logo">
+            <span>Harmonía</span>Musical
+        </figure>
+      </div>
+      <div class="box">
+        <h2>LA EMPRESA</h2>
+        <a href="/pages/about-us/about-us.html">Acerca de</a>
+        <a href="#">Politica de Privacida</a>
+        <a href="#">Terminos y Condiciones</a>
+        <h2 >CONTACTANOS</h2>
+        <p>387-52388016</p>
+        <p>Lunes a Viernes</p>
+        <p>De 9:00 A 17:30</p>
+      </div>
+        <div class="box cont-icon">
+          <h2>NUESTRAS REDES</h2>
+          <div class="red-social">
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+            <a href="https://twitter.com/" class="fa-brands fa-twitter"></a>
+            <a href="https://www.youtube.com/" class="fa-brands fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    
+      
+    </div>
+    <div class="grupo-2">
+      <small> &copy; 2023 <b>Slee DW</b> - Todos los Derechos Reservados.</small>
+    </div>
+    
+
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/user-info.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
